@@ -22,3 +22,10 @@ https://www.youtube.com/watch?v=XE_mAhxZpwU&list=PLVx1qovxj-akoYTAboxT1AbHlPmrvR
 <user username="war-deployer" password="jenkins-tomcat-deploy"
                                       roles="manager-script" />
 http://localhost:9090/IEdpms/#/login
+<role rolename="manager-gui"/>
+ <role rolename="manager-script"/>
+ <role rolename="manager-jmx"/>
+ <role rolename="manager-status"/>
+ <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+ <user username="deployer" password="deployer" roles="manager-script"/>
+ <user username="tomcat" password="s3cret" roles="manager-gui"/>
