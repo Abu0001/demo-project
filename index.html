@@ -32,3 +32,11 @@ http://localhost:9090/IEdpms/#/login
 http://192.168.0.109:8000/
 https://docs.gradle.org/current/userguide/jenkins.html
 https://github.com/kyzersoftware/TZ_Plus_BackEnd.git
+dependencyResolutionManagement {
+repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+   repositories {
+   google()
+   mavenCentral()
+   jcenter()
+   maven { url "https://maven.xyz.com" }
+}
